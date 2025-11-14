@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portpolio</title>
+  <link rel="stylesheet" href="./style.css" />
+  <!-- 구글 폰트 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script src="/script.js"></script>
+  <!-- 제이쿼리 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- lodash -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.20/lodash.min.js"></script>
+  <!-- 스와이퍼 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- gsap -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <!-- ScrollTrigger -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/ScrollTrigger.min.js"></script>
+
+</head>
+
+<body>
+
+  <!-- sec_1 main -->
+  <section class="sec sec_1 con-min-width">
+    <div class="con">
+      <div class="title">
+        <p class="title_txt">Clear</p>
+      </div>
+      <div class="subtitle">
+        <div class="sub_txt_box1 sub_txt_small">
+          <p class="sub1_left_txt">2025</p>
+          <p class="sub1_right_txt">About me</p>
+        </div>
+        <div class="sub_txt_box2">
+          <span class="sub2_txt">Web & visual <br>
+            Design <br>
+            Portfolio</span>
+        </div>
+        <div class="sub_txt_box3 sub_txt_small">
+          <p class="sub3_left_txt">Mok Sunhee
+            <br>
+            1989.09.07
+            <br>
+            msh93077@gmail.com
+          </p>
+          <p class="sub3_right_txt">Doandong, Seo-gu,<br>
+            Daejeon, South Korea</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- sec_2 portfolio-layout -->
+  <section class="sec sec_2 con-min-width">
+    <div class="con portfolio-layout ">
+      <aside class="sidebar">
+        <div class="sidebar-ra"></div>
+        <div class="sidebar__inner">
+
+          <div class="sidebar__header">
+            <img src="./portpolio_img/point_text.png" alt="포인트 이미지">
+          </div>
+
+          <div class="sidebar__photo">
+            <img src="./portpolio_img/photo_01.png" alt="프로필 사진">
+          </div>
+
+          <div class="sidebar__name">
+            <p class="name-ko">목선희</p>
+            <p class="name-en">SUNHEE MOK</p>
+          </div>
+
+          <nav class="sidebar__menu">
+            <h3 class="menu__title">Content</h3>
+
+            <ul class="menu__list">
+              <li class="menu__item menu__item_1">Profile</li>
+              <li class="menu__item">Projects</li>
+            </ul>
+          </nav>
+
+        </div>
+      </aside>
+
+      <!-- ==============================
+       MAIN CONTENT AREA
+  =============================== -->
+      <main class="resume">
+        <div class="resume__inner">
+          <div class="page page-profile active">
+            <div id="resume__photo" class="resume__photo">
+              <img src="./portpolio_img/resume_img.png" alt="">
+            </div>
+          </div>
+
+          <!-- 2x2 그리드 -->
+          <main class="page page-projects">
+            <div class="projects-grid">
+
+              <!-- ① 메인 프로젝트 카드 (왼쪽 위) -->
+              <div class="project-card project-card-1">
+                <div class="project-card__preview">
+                  <img src="./portpolio_img/byredo_main_s.png" alt="Byredo Web Redesign 화면">
+                </div>
+
+                <!-- 가운데 검은 박스 -->
+                <div class="project-card__info">
+                  <h3 class="project-card__title">Web Redesign</h3>
+                  <p class="project-card__subtitle">개인 프로젝트 · 1주</p>
+                </div>
+
+                <!-- 왼쪽 하단 버튼 -->
+                <div class="project-card__actions">
+                  <a href="./portpolio_img/byredo_redesign.pdf" target="_blank" class="btn btn--dark">PDF</a>
+                </div>
+              </div>
+
+              <!-- ② 오른쪽 위 카드 (추가 프로젝트 자리) -->
+              <div class="project-card project-card-2">
+                <div class="project-card__preview">
+                  <img src="./portpolio_img/SNS소개14.png" target="_blank" alt="Byredo Web Redesign 화면">
+                </div>
+
+                <!-- 가운데 검은 박스 -->
+                <div class="project-card__info">
+                  <h3 class="project-card__title">Web Branding</h3>
+                  <p class="project-card__subtitle">팀 프로젝트 · 8주</p>
+                </div>
+
+                <!-- 왼쪽 하단 버튼 -->
+                <div class="project-card__actions">
+                  <a href="./portpolio_img/greendays_main.pdf" target="_blank" class="btn btn--dark">PDF</a>
+                </div>
+              </div>
+
+              <!-- ③ 왼쪽 아래 카드 -->
+              <div class="project-card project-card-3">
+                <div class="project-card__preview">
+                  <img src="./portpolio_img/1920_1080_30.png" alt="Byredo Web Redesign 화면">
+                </div>
+
+                <!-- 가운데 검은 박스 -->
+                <div class="project-card__info">
+                  <h3 class="project-card__title">Web Process</h3>
+                  <p class="project-card__subtitle">팀 프로젝트 · 8주</p>
+                </div>
+
+                <!-- 왼쪽 하단 버튼 -->
+                <div class="project-card__actions">
+                  <a href="https://moksunhee.github.io/greendays/" target="_blank" class="btn btn--outline">Process</a>
+                </div>
+              </div>
+
+              <!-- ④ 오른쪽 아래 카드 -->
+              <!-- <div class="project-card project-card-4">
+                <div class="project-card__preview">
+                  <img src="./portpolio_img/Composition-promo (1).png" alt="Byredo Web Redesign 화면">
+                </div>
+
+                <div class="project-card__info">
+                  <h3 class="project-card__title">UIUX Redesign</h3>
+                  <p class="project-card__subtitle">개인 프로젝트 · 6주</p>
+                </div>
+
+                <div class="project-card__actions">
+                  <a href="#" class="btn btn--outline">Process</a>
+                  <a href="#" class="btn btn--dark">PDF</a>
+                </div>
+              </div> -->
+            </div>
+          </main>
+        </div>
+      </main>
+
+    </div>
+  </section>
+
+</body>
+
+<script>
+  function box__init() {
+    $(".sidebar__inner > nav > ul > li").click(function() {
+      var thisIndex = $(this).index();
+      $(this).siblings().removeClass("hover");
+      $(this).addClass("hover");
+      var $layout = $(this).closest(".portfolio-layout");
+      var $box = $layout.find(".resume__inner");
+      $box.find("> .page").removeClass("active");
+      $box.find("> .page").eq(thisIndex).addClass("active");
+    });
+  }
+  $(function() {
+    box__init();
+  });
+</script>
+
+</html>
